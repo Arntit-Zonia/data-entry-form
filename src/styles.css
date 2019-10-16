@@ -1,0 +1,19 @@
+.date {
+	width: 65px !important;
+	text-align: center;
+}
+
+.card {
+	background: gainsboro;
+}
+
+.btn:focus {
+	box-shadow: none !important;
+}
+
+.next {
+	display: block !important;
+	margin-left: auto !important;
+	width: 120px !important;
+	background: purple !important;
+}

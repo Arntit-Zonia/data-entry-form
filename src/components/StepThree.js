@@ -3,10 +3,10 @@ import React from "react";
 const StepThree = () => {
 	return (
 		<div className="card">
-			<div className="card-header" id="headingThree">
+			<div className="card-header bg-warning" id="headingThree">
 				<h2 className="mb-0">
 					<button
-						className="btn btn-link collapsed"
+						className="btn collapsed text-white"
 						type="button"
 						data-toggle="collapse"
 						data-target="#collapseThree"
@@ -18,19 +18,23 @@ const StepThree = () => {
 			<div
 				id="collapseThree"
 				className="collapse"
-				aria-labelledby="headingThree"
 				data-parent="#accordionExample"
 			>
 				<div className="card-body">
 					<label htmlFor="textarea">Comments</label>
-					<textarea id="textarea" cols="60" rows="10"></textarea>
+					<br />
+					<textarea
+						id="textarea"
+						className="form-control rounded w-75"
+						rows="10"
+					></textarea>
 					<button
-						className="btn btn-info ml-5"
+						className="next btn btn-info d-flex ml-auto"
 						type="button"
 						data-toggle="collapse"
 						data-target="#collapseThree"
 					>
-						Next
+						Next >
 					</button>
 				</div>
 			</div>

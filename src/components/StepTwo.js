@@ -3,10 +3,10 @@ import React from "react";
 const StepTwo = () => {
 	return (
 		<div className="card">
-			<div className="card-header" id="headingTwo">
+			<div className="card-header bg-warning" id="stepTwo">
 				<h2 className="mb-0">
 					<button
-						className="btn btn-link collapsed"
+						className="btn collapsed text-white"
 						type="button"
 						data-toggle="collapse"
 						data-target="#collapseTwo"
@@ -20,26 +20,70 @@ const StepTwo = () => {
 			<div
 				id="collapseTwo"
 				className="collapse"
-				aria-labelledby="headingTwo"
 				data-parent="#accordionExample"
 			>
 				<div className="card-body">
-					<label htmlFor="phoneNumber">Telephone number</label>
-					<input type="tel" id="phoneNumber" />
-					<select name="Gender" id="gender">
-						<option value="Select Gender"> Select Gender</option>
-						<option value="Male">Male</option>
-						<option value="Female">Female</option>
-					</select>
-					<label htmlFor="date">Date of birth</label>
-					<input type="date" id="date" />
+					<div className="row">
+						<div className="col-6">
+							<label htmlFor="phoneNumber">
+								Telephone number
+							</label>
+							<br />
+							<input
+								type="tel"
+								id="phoneNumber"
+								className="form-control w-75"
+								required
+							/>
+						</div>
+						<div className="col-6">
+							<label htmlFor="gender">Gender</label>
+							<br />
+							<select
+								name="Gender"
+								id="gender"
+								className="form-control w-50"
+								required
+							>
+								<option value="Select Gender">
+									Select Gender
+								</option>
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+						</div>
+						<div className="col-6 mt-3">
+							<label htmlFor="date">Date of birth</label>
+							<br />
+							<input
+								id="date"
+								className="date form-control w-25 d-inline "
+								placeholder="DD"
+								maxLength="2"
+								required
+							/>
+							<input
+								className="date form-control w-25 d-inline mx-2"
+								placeholder="MM"
+								maxLength="2"
+								required
+							/>
+							<input
+								className="date form-control w-25 d-inline"
+								placeholder="YYYY"
+								maxLength="4"
+								required
+							/>
+						</div>
+					</div>
+
 					<button
-						className="btn btn-info ml-5"
+						className="next btn btn-info d-flex ml-auto"
 						type="button"
 						data-toggle="collapse"
-						data-target="#collapseThree" // opens next one
+						data-target="#collapseThree"
 					>
-						Next
+						Next >
 					</button>
 				</div>
 			</div>

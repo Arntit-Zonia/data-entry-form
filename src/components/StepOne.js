@@ -3,9 +3,9 @@ import React from "react";
 const StepOne = () => {
 	return (
 		<div className="card">
-			<div className="card-header" id="stepOne">
+			<div className="card-header bg-warning" id="stepOne">
 				<button
-					className="btn btn-link"
+					className="btn text-white"
 					type="button"
 					data-toggle="collapse"
 					data-target="#collapseOne"
@@ -20,19 +20,45 @@ const StepOne = () => {
 				data-parent="#accordionExample"
 			>
 				<div className="card-body">
-					<label htmlFor="first">First Name</label>
-					<input id="first" type="text" />
-					<label htmlFor="last">Surname</label>
-					<input id="last" type="text" />
-					<label htmlFor="email">Email Address:</label>
-					<input id="email" type="email" />
+					<div className="row">
+						<div className="col">
+							<label htmlFor="firstName">First Name</label>
+							<br />
+							<input
+								id="firstName"
+								className="form-control w-75"
+								type="text"
+								required
+							/>
+						</div>
+						<div className="col-6">
+							<label htmlFor="surname">Surname</label>
+							<br />
+							<input
+								id="surname"
+								className="form-control w-75"
+								type="text"
+								required
+							/>
+						</div>
+						<div className="col-6 mt-3">
+							<label htmlFor="email">Email Address:</label>
+							<br />
+							<input
+								id="email"
+								className="form-control w-75"
+								type="email"
+								required
+							/>
+						</div>
+					</div>
 					<button
-						className="btn btn-info ml-5"
+						className="next btn btn-info"
 						type="button"
 						data-toggle="collapse"
-						data-target="#collapseTwo" // opens next one
+						data-target="#collapseTwo"
 					>
-						Next
+						Next >
 					</button>
 				</div>
 			</div>
