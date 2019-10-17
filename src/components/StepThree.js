@@ -4,21 +4,19 @@ const StepThree = () => {
 	return (
 		<div className="card">
 			<div className="card-header bg-warning" id="headingThree">
-				<h2 className="mb-0">
-					<button
-						className="btn collapsed text-white"
-						type="button"
-						data-toggle="collapse"
-						data-target="#collapseThree"
-					>
-						Step 3: Final Comments
-					</button>
-				</h2>
+				<button
+					className="btn collapsed text-white"
+					type="button"
+					data-toggle="collapse"
+					data-target="#collapseThree"
+				>
+					Step 3: Final Comments
+				</button>
 			</div>
 			<div
 				id="collapseThree"
 				className="collapse"
-				data-parent="#accordionExample"
+				data-parent="#accordion"
 			>
 				<div className="card-body">
 					<label htmlFor="textarea">Comments</label>

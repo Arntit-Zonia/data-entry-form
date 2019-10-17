@@ -5,8 +5,8 @@ import StepThree from "./StepThree";
 
 const Form = () => {
 	return (
-		<form className="container w-50 my-5">
-			<div className="accordion" id="accordionExample">
+		<form id="form" className="container my-5">
+			<div className="accordion" id="accordion">
 				<StepOne />
 				<StepTwo />
 				<StepThree />

@@ -17,7 +17,7 @@ const StepOne = () => {
 			<div
 				id="collapseOne"
 				className="collapse show"
-				data-parent="#accordionExample"
+				data-parent="#accordion"
 			>
 				<div className="card-body">
 					<div className="row">
@@ -26,7 +26,7 @@ const StepOne = () => {
 							<br />
 							<input
 								id="firstName"
-								className="form-control w-75"
+								className="form-control"
 								type="text"
 								required
 							/>
@@ -36,7 +36,7 @@ const StepOne = () => {
 							<br />
 							<input
 								id="surname"
-								className="form-control w-75"
+								className="form-control"
 								type="text"
 								required
 							/>
@@ -46,7 +46,7 @@ const StepOne = () => {
 							<br />
 							<input
 								id="email"
-								className="form-control w-75"
+								className="form-control"
 								type="email"
 								required
 							/>

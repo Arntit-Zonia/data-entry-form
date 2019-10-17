@@ -4,24 +4,16 @@ const StepTwo = () => {
 	return (
 		<div className="card">
 			<div className="card-header bg-warning" id="stepTwo">
-				<h2 className="mb-0">
-					<button
-						className="btn collapsed text-white"
-						type="button"
-						data-toggle="collapse"
-						data-target="#collapseTwo"
-						aria-expanded="false"
-						aria-controls="collapseTwo"
-					>
-						Step 2: More Comments
-					</button>
-				</h2>
+				<button
+					className="btn collapsed text-white"
+					type="button"
+					data-toggle="collapse"
+					data-target="#collapseTwo"
+				>
+					Step 2: More Comments
+				</button>
 			</div>
-			<div
-				id="collapseTwo"
-				className="collapse"
-				data-parent="#accordionExample"
-			>
+			<div id="collapseTwo" className="collapse" data-parent="#accordion">
 				<div className="card-body">
 					<div className="row">
 						<div className="col-6">
@@ -32,7 +24,7 @@ const StepTwo = () => {
 							<input
 								type="tel"
 								id="phoneNumber"
-								className="form-control w-75"
+								className="form-control"
 								required
 							/>
 						</div>
@@ -42,7 +34,7 @@ const StepTwo = () => {
 							<select
 								name="Gender"
 								id="gender"
-								className="form-control w-50"
+								className="form-control"
 								required
 							>
 								<option value="Select Gender">
@@ -57,20 +49,17 @@ const StepTwo = () => {
 							<br />
 							<input
 								id="date"
-								className="date form-control w-25 d-inline "
-								placeholder="DD"
+								className="date form-control d-inline"
 								maxLength="2"
 								required
 							/>
 							<input
-								className="date form-control w-25 d-inline mx-2"
-								placeholder="MM"
+								className="date form-control d-inline"
 								maxLength="2"
 								required
 							/>
 							<input
-								className="date form-control w-25 d-inline"
-								placeholder="YYYY"
+								className="date form-control d-inline"
 								maxLength="4"
 								required
 							/>
